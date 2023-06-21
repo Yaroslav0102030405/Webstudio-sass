@@ -1,0 +1,80 @@
+.footer {
+  background-color: $background-color;
+}
+
+.footer-text {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
+
+.address-map {
+  margin-top: 20px;
+}
+
+.address-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-icon {
+  margin-left: 70px;
+}
+
+.address-map,
+.address-link {
+  margin-bottom: 9px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $white-color;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list-icon a {
+  display: flex;
+  padding: 12px;
+  border: 0;
+  border-radius: 50%;
+  /* fill: #afb1b8; */
+  fill: $white-color;
+  margin-bottom: 30px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.footer-list-icon a:hover {
+  fill: $white-color;
+  background-color: #2196f3;
+}
+
+.footer-list-icon {
+  margin-right: 10px;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+}

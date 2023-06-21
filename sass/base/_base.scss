@@ -1,0 +1,110 @@
+/* Базовые настройки ------------ */
+
+body {
+  margin: 0;
+  /* padding-top: 85px; */
+
+  background-color: var(--white-color);
+  color: var(--text-color);
+
+  font-family: Roboto, sans-serif;
+}
+
+/* скрыть заголовки и части текста */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section {
+  outline: 2px solid red;
+}
+
+/* Создание контейнера ----------- */
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.features,
+.team,
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work {
+  padding-bottom: 94px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Личный нормализатор -------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  /* padding: 0;
+  margin: 0; */
+  color: var(--title-color);
+}
+
+p {
+  margin-top: 0;
+  /* padding: 0;
+  margin: 0; */
+}
+
+/* чтоб можно было задать геометрию -------- */
+
+a {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Зброс зазора */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* margin: 0px;
+  padding: 0px; */
+}
