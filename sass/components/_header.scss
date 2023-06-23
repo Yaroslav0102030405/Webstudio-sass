@@ -52,9 +52,9 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
-//   &:hover &:focus {
-// color: $accent-color;
-//   }
+  //   &:hover &:focus {
+  // color: $accent-color;
+  //   }
 }
 
 .menu-item {
@@ -109,15 +109,16 @@
 
   &-item {
     padding: 10px;
-  margin: 10px;
+    margin: 10px;
   }
 
   &-link {
     cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
 
-  &-link:hover, &-link:focus {
+  &-link:hover,
+  &-link:focus {
     color: $accent-color;
   }
 }
@@ -159,19 +160,20 @@
 
   &-icon {
     display: flex;
-  align-items: center;
+    align-items: center;
 
-  color: #757575;
-  fill: #212121;
-  cursor: pointer;
+    color: #757575;
+    fill: #212121;
+    cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
 
-  &-icon:hover, &-icon:focus {
-     fill: #2196f3;
-  color: $accent-color;
+  &-icon:hover,
+  &-icon:focus {
+    fill: #2196f3;
+    color: $accent-color;
   }
 }
 
@@ -216,4 +218,3 @@
 
   color: $text-color;
 }
-

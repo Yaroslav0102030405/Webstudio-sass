@@ -10,6 +10,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+@media (min-width: 800px) {
+  body {
+    background-color: chocolate;
+  }
+}
+
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
