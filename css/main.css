@@ -275,6 +275,15 @@ section {
   }
 }
 
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,7 +371,8 @@ section {
 }
 
 .header {
-  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .hero {
@@ -466,16 +476,22 @@ img {
   color: #000000;
 }
 
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.icon-close {
+  position: absolute;
+}
+
 .menu-button {
   display: inline-block;
-  margin: 0;
+  vertical-align: middle;
   padding: 0;
   border: none;
   background-color: transparent;
-}
-
-.menu-button .icon-close {
-  display: none;
 }
 
 .menu-button.is-open .icon-close {
@@ -571,6 +587,11 @@ img {
 .contacts {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 .contacts-item {
   margin-right: 50px;

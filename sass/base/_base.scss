@@ -52,6 +52,11 @@ section {
   }
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-flex-container {
   display: flex;
   justify-content: space-between;
@@ -100,9 +105,11 @@ section {
 }
 
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   // padding-top: 12px;
   // padding-bottom: 12px;
-  height: 60px;
+  // height: 60px;
 }
 
 .hero {
