@@ -12,17 +12,18 @@ Use a better box model (opinionated).
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
   /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
   line-height: 1.15; /* 1. Correct the line height in all browsers. */
   -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
   -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
   -o-tab-size: 4;
-     tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
@@ -55,7 +56,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -74,7 +75,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -147,12 +149,12 @@ select {
 /**
 Correct the inability to style clickable types in iOS and Safari.
 */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
+/* button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
-}
+} */
 
 /**
 Remove the inner border and padding in Firefox.
@@ -197,15 +199,6 @@ Correct the cursor style of increment and decrement buttons in Safari.
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
-}
-
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -273,11 +266,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .center {
@@ -413,7 +406,7 @@ img {
   display: block;
   position: absolute;
   /* display: inline-flex; */
-  content: "";
+  content: '';
   width: 100%;
   height: 3px;
   left: 0;
@@ -445,7 +438,8 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.submenu-link:hover, .submenu-link:focus {
+.submenu-link:hover,
+.submenu-link:focus {
   color: #2196f3;
 }
 
@@ -471,15 +465,18 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #757575;
   fill: #212121;
   cursor: pointer;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.contacts-icon:hover, .contacts-icon:focus {
+.contacts-icon:hover,
+.contacts-icon:focus {
   fill: #2196f3;
   color: #2196f3;
 }
@@ -540,7 +537,8 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: deeppink;
 }
 .btn-clouse {
@@ -583,15 +581,17 @@ img {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   /* position: relative; */
   width: 528px;
   /* margin-right: auto;
   margin-left: auto; */
   padding: 40px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .form-icon {
@@ -606,7 +606,8 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-.form-icon:hover, .form-icon:focus {
+.form-icon:hover,
+.form-icon:focus {
   fill: #2196f3;
 }
 .form-title {
@@ -675,8 +676,8 @@ textarea {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
-  content: "";
+  transform: translate(-50%, -50%) scale(0);
+  content: '';
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -689,7 +690,7 @@ textarea {
 
 .real-checkbox:checked + .custom-checkbox::before {
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .form-text,
@@ -712,11 +713,11 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .form .btn {
@@ -727,7 +728,7 @@ label {
 
 .features-item::before {
   display: block;
-  content: "";
+  content: '';
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
@@ -735,16 +736,17 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .features-item:hover:before {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .features-item:nth-child(1)::before {
@@ -813,15 +815,16 @@ label {
 
 .work-image {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .work-image:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .team-flex {
@@ -829,8 +832,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .team {
@@ -845,9 +848,12 @@ label {
 .team-item:last-child {
   margin-right: 0;
 }
-.team-item:hover, .team-item:focus {
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.team-item:hover,
+.team-item:focus {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle {
@@ -880,8 +886,10 @@ label {
   fill: #afb1b8;
   margin-bottom: 30px;
   cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .team-list-icon a:hover {
@@ -919,22 +927,22 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .clients-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   margin-right: 30px;
@@ -942,13 +950,18 @@ label {
   border-radius: 4px;
   fill: #afb1b8;
   cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .clients-logo:last-child {
   margin-right: 0;
 }
-.clients-logo:hover, .clients-logo:focus {
+.clients-logo:hover,
+.clients-logo:focus {
   fill: #2196f3;
   color: #2196f3;
   border: 1px solid #2196f3;
@@ -959,8 +972,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .footer {
@@ -987,8 +1000,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .address-icon {
@@ -1027,8 +1040,10 @@ label {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .footer-list-icon a:hover {
@@ -1043,4 +1058,4 @@ label {
 .footer-icon {
   width: 20px;
   height: 20px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

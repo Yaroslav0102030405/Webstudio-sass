@@ -3,18 +3,18 @@
 body {
   margin: 0;
   /* padding-top: 85px; */
+  padding-top: 85px;
 
   background-color: var(--white-color);
   color: var(--text-color);
 
   font-family: Roboto, sans-serif;
-}
 
-@media (min-width: 800px) {
-  body {
+  @media (min-width: 800px) {
     background-color: chocolate;
   }
 }
+
 
 /* скрыть заголовки и части текста */
 .visually-hidden {
@@ -50,6 +50,11 @@ section {
 .center {
   text-align: center;
 }
+
+// .header {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+// }
 
 .hero {
   padding-top: 200px;
