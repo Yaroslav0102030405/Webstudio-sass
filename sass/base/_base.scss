@@ -3,7 +3,7 @@
 body {
   margin: 0;
   /* padding-top: 85px; */
-  padding-top: 85px;
+  // padding-top: 85px;
 
   background-color: var(--white-color);
   color: var(--text-color);
@@ -39,7 +39,7 @@ section {
   padding-right: 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     width: 480px;
   }
 
@@ -65,6 +65,22 @@ section {
 
   @media screen and (max-width: 767px) {
     display: block;
+  }
+}
+
+.work-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
 }
 
@@ -108,19 +124,6 @@ section {
 
 .work {
   padding-bottom: 94px;
-}
-
-.work {
-  @media screen and (max-width: 1140px) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
 }
 
 .footer {

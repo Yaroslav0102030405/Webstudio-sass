@@ -30,10 +30,18 @@
 
     border-radius: 0px 0px 4px 4px;
     cursor: pointer;
+
+    @media screen and (max-width: 1140px) {
+     margin-bottom: 30px;
+    }
   }
 
   &-item:last-child {
     margin-right: 0;
+
+    @media screen and (max-width: 1140px) {
+     margin-bottom: 0;
+    }
   }
 
   &-item:hover,

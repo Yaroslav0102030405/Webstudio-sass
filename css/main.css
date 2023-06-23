@@ -226,7 +226,6 @@ summary {
 body {
   margin: 0;
   /* padding-top: 85px; */
-  padding-top: 85px;
   background-color: var(--white-color);
   color: var(--text-color);
   font-family: Roboto, sans-serif;
@@ -260,7 +259,7 @@ section {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
     width: 480px;
   }
@@ -302,6 +301,38 @@ section {
 @media screen and (max-width: 767px) {
   .features-flex-container {
     display: block;
+  }
+}
+
+.work-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .team-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -356,19 +387,6 @@ section {
 
 .work {
   padding-bottom: 94px;
-}
-
-@media screen and (max-width: 1140px) {
-  .work {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
 }
 
 .footer {
@@ -895,7 +913,12 @@ label {
 }
 .features-item:last-child {
   margin-right: 0;
-  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
 }
 
 .work-title {
@@ -962,8 +985,18 @@ label {
   border-radius: 0px 0px 4px 4px;
   cursor: pointer;
 }
+@media screen and (max-width: 1140px) {
+  .team-item {
+    margin-bottom: 30px;
+  }
+}
 .team-item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 1140px) {
+  .team-item:last-child {
+    margin-bottom: 0;
+  }
 }
 .team-item:hover, .team-item:focus {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1075,12 +1108,6 @@ label {
 @media screen and (max-width: 767px) {
   .clients-logo {
     width: 210px;
-    height: 90px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients-logo {
-    width: 226px;
     height: 90px;
   }
 }
