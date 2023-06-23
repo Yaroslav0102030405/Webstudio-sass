@@ -7,6 +7,24 @@
   text-align: center;
   background: #f5f4fa;
 
+  &-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    color: var(--black-color);
+
+    @media screen and (max-width: 1140px) {
+      margin-bottom: 30px;
+
+      font-size: 28px;
+      letter-spacing: 0.84px;
+    }
+  }
+
   &-item {
     background: $white-color;
 

@@ -1,3 +1,10 @@
+.features .features-title {
+  
+   @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
 .features-item::before {
   display: block;
   content: '';
@@ -10,6 +17,11 @@
   transform: scale(1);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 120px;
+  }
 }
 
 .features-item:hover:before {
@@ -54,13 +66,23 @@
   letter-spacing: 0.03em;
 
   color: var(--text-color);
+
+  @media screen and (max-width: 1140px) {
+    width: 450px;
+
+    font-family: Roboto;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
 }
 
 .features-item {
   margin-right: 30px;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 

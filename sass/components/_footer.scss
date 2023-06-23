@@ -13,6 +13,10 @@
   text-transform: uppercase;
 
   color: $white-color;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .address-map {
@@ -22,10 +26,20 @@
 .address-flex {
   display: flex;
   align-items: baseline;
+
+  @media screen and (max-width: 767px) {
+   display: block;
+   text-align: center;
+  }
 }
 
 .address-icon {
   margin-left: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+    
+  }
 }
 
 .address-map,

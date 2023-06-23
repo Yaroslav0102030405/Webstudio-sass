@@ -5,6 +5,7 @@
   left: 0;
   min-height: 80px;
   background-color: inherit;
+  z-index: 999;
 }
 
 .logo {
@@ -17,6 +18,10 @@
   letter-spacing: 0.03em;
 
   text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
 
   &-web {
     color: $accent-color;
