@@ -1,15 +1,23 @@
 .header {
-  position: fixed;
+  position: relative;
+  // position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 80px;
+  // min-height: 60px;
   background-color: inherit;
   z-index: 999;
 }
 
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
-  margin-right: 93px;
+  display: inline-block;
+  // margin-right: 93px;
 
   font-family: Raleway;
   font-weight: 700;
@@ -20,7 +28,8 @@
   text-decoration: none;
 
   @media screen and (max-width: 767px) {
-    margin-right: 0;
+    font-size: 24px;
+    letter-spacing: 0.72px;
   }
 
   &-web {
@@ -33,7 +42,7 @@
 }
 
 .menu {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -42,12 +51,32 @@
   position: absolute;
 }
 
+.margin {
+  margin-left: auto;
+}
+
+.menu-three {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: aqua;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+
+  &is-open {
+    display: block;
+  }
+}
 
 .menu-button {
   // убрали все базовые стили кнопки
-  display: inline-block;
-  vertical-align: middle;
-  
+  display: inline-flex;
+  // vertical-align: middle;
+
   // margin: 0;
   padding: 0;
   border: none;
@@ -61,7 +90,6 @@
 .menu-button.is-open .icon-menu {
   display: none;
 }
-
 
 .logo-studio-footer {
   color: $white-color;
@@ -79,7 +107,6 @@
   color: var(--title-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
 }
 
 .menu-item {
@@ -148,7 +175,6 @@
   }
 }
 
-
 .menu-item:hover .submenu {
   display: block;
 }
@@ -157,7 +183,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
@@ -191,7 +217,6 @@
     color: $accent-color;
   }
 }
-
 
 .contacts,
 .contacts-link {

@@ -1,49 +1,39 @@
 <!DOCTYPE html>
-<!-- инструкция чтобы сообщить браузеру в какой версии HTML написан документ  -->
 <html lang="ru">
-  <!-- Атрибут lang указывает на каком языке написан текст страницы -->
   <head>
-    <!-- Предназначен для хранения служебной информации о странице: заголовок, описание, кодировку -->
     <meta charset="UTF-8" />
-    <!-- используется для хранения информации предназначенной для браузера и поисковых систем -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- для адаптивной верстки -->
     <title>Document</title>
-    <!-- Заголовок который отображается во вкладке браузера -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
     <link rel="stylesheet" href="./css/main.min.css">
-    <!-- подключаем файл модерн нормалайз после шрифтов -->
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
-    <!-- Содержит контент будущей веб-страницы -->
     <header class="header">
       
-      <div class="container header-flex-container">
-        <nav class="header-flex-container">
+      <div class="container">
+      <div class="header-menu">
           <a class="logo" href="">
             <span class="logo-web">Web</span
             ><span class="logo-studio">Studio</span>
-
+            
+            <div class="margin">
         <button type="button" class="menu-button is-open" data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-close" href="./images/sprite.svg#icon-close_40px"></use>
-            <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
+            <use class="icon-close" href="./images/sprite.svg#icon-menu_40px"></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-close_40px"></use>
           </svg>
         </button>
           </a>
+          
+          </div>
+          <div class="menu-three is-open">Контакт меню</div>
+</div>
 
+  <nav class="header-flex-container">
           <ul class="menu header-flex-container">
             <li class="menu-item">
               <a class="menu-link current" href="">Студия</a></li>
@@ -73,8 +63,7 @@
             </li>
             <li class="menu-item"><a class="menu-link" href="">Контакты</a></li>
           </ul>
-        </nav>
-
+  
         <ul class="contacts header-flex-container">
           <li class=" contacts-item">
             <a class="contacts-link contacts-icon"
@@ -96,6 +85,7 @@
             </a>
           </li>
         </ul>
+        </nav>
       </div>
      
 

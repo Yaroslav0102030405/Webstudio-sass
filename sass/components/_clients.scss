@@ -13,7 +13,7 @@
 
     @media screen and (max-width: 1140px) {
       margin-bottom: 30px;
-      
+
       font-size: 28px;
       letter-spacing: 0.84px;
     }
@@ -23,6 +23,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-item:nth-child(n + 5) {
+    margin-bottom: 0;
   }
 
   &-logo {
@@ -46,11 +54,6 @@
       width: 210px;
       height: 90px;
     }
-
-    // @media screen and (min-width: 768px) {
-    //   width: 226px;
-    //   height: 90px;
-    // }
   }
 
   &-logo:last-child {

@@ -225,7 +225,6 @@ summary {
 /* Базовые настройки ------------ */
 body {
   margin: 0;
-  /* padding-top: 85px; */
   background-color: var(--white-color);
   color: var(--text-color);
   font-family: Roboto, sans-serif;
@@ -446,17 +445,28 @@ img {
 }
 
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 80px;
   background-color: inherit;
   z-index: 999;
 }
 
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
-  margin-right: 93px;
+  display: inline-block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -466,7 +476,8 @@ img {
 }
 @media screen and (max-width: 767px) {
   .logo {
-    margin-right: 0;
+    font-size: 24px;
+    letter-spacing: 0.72px;
   }
 }
 .logo-web {
@@ -486,9 +497,25 @@ img {
   position: absolute;
 }
 
+.margin {
+  margin-left: auto;
+}
+
+.menu-three {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: aqua;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
 .menu-button {
-  display: inline-block;
-  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1125,6 +1152,14 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .clients-item {
+    margin-bottom: 30px;
+  }
+}
+.clients-item:nth-child(n+5) {
+  margin-bottom: 0;
 }
 .clients-logo {
   display: -webkit-box;
