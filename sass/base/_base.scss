@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 
   background-color: var(--white-color);
   color: var(--text-color);
@@ -59,6 +60,11 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+@media screen and (max-width: 767px) {
+  display: inline-block;
+  text-align: center;
+}
+
 }
 
 .features-flex-container {

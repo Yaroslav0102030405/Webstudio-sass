@@ -1,0 +1,57 @@
+.logo {
+    @media screen and (max-width: 767px) {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
+}
+
+.menu {
+      @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.menu-burger {
+  @media screen and (max-width: 767px) {
+   
+    // display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: $white-color;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(-100%);
+  transition: transform 500ms linear;
+
+   padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+
+   &.is-open {
+    // display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+
+    transform: translateY(0);
+  }
+
+   &-web {
+    color: $accent-color;
+  }
+
+  &-studio {
+    color: $black-color;
+  }
+}

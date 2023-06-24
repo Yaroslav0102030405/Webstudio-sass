@@ -6,10 +6,10 @@
   left: 0;
   // min-height: 60px;
   background-color: inherit;
-  z-index: 999;
+  // z-index: 999;
 }
 
-.header-menu {
+.header-mobile-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,8 @@
 
 .menu {
   @media screen and (max-width: 767px) {
-    display: none;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -55,32 +56,18 @@
   margin-left: auto;
 }
 
-.menu-three {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
-  background-color: aqua;
-  padding: 10px;
-  text-align: center;
-  font-size: 20px;
-
-  &is-open {
-    display: block;
-  }
-}
-
 .menu-button {
   // убрали все базовые стили кнопки
   display: inline-flex;
-  // vertical-align: middle;
 
-  // margin: 0;
+  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu-button .icon-close {
+  display: none;
 }
 
 .menu-button.is-open .icon-close {
@@ -89,6 +76,40 @@
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-burger {
+  // display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: $white-color;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateY(-100%);
+  transition: transform 500ms linear;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &.is-open {
+    // display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+
+    transform: translateY(0);
+  }
 }
 
 .logo-studio-footer {
@@ -107,14 +128,32 @@
   color: var(--title-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+  }
 }
 
 .menu-item {
   margin-right: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
 }
 
 .menu-item:last-child {
   margin-right: 0;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
+  }
 }
 
 .menu-link.current {
@@ -142,15 +181,20 @@
   border: 3px solid $accent-color;
   /* background: #2196F3; */
   border-radius: 2px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: -10px;
+  }
 }
 
 .submenu {
+  display: none;
   position: absolute;
   top: 100%;
   left: -15px;
   width: 155%;
-
-  display: none;
   padding: 0;
   margin: 0;
 
@@ -184,23 +228,36 @@
   padding-bottom: 20px;
 
   @media screen and (max-width: 767px) {
-    display: none;
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 
   &-item {
     margin-right: 50px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
   }
 
   &-item:last-child {
     margin-right: 0;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
   }
 
   &-svg {
     margin-right: 10px;
+    width: 15px;
+    height: 20px;
+    vertical-align: sub;
   }
 
   &-icon {
-    display: flex;
+    display: inline-block;
     align-items: center;
 
     color: #757575;
@@ -228,4 +285,10 @@
   letter-spacing: 0.02em;
 
   color: $text-color;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    margin-right: 0;
+  }
 }

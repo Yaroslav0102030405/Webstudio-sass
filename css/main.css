@@ -225,6 +225,7 @@ summary {
 /* Базовые настройки ------------ */
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--white-color);
   color: var(--text-color);
   font-family: Roboto, sans-serif;
@@ -293,6 +294,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header-flex-container {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 .features-flex-container {
@@ -450,10 +457,9 @@ img {
   top: 0;
   left: 0;
   background-color: inherit;
-  z-index: 999;
 }
 
-.header-menu {
+.header-mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +495,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu {
-    display: none;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -501,24 +508,18 @@ img {
   margin-left: auto;
 }
 
-.menu-three {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: aqua;
-  padding: 10px;
-  text-align: center;
-  font-size: 20px;
-}
-
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu-button .icon-close {
+  display: none;
 }
 
 .menu-button.is-open .icon-close {
@@ -527,6 +528,39 @@ img {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-burger {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 500ms linear;
+  transition: -webkit-transform 500ms linear;
+  transition: transform 500ms linear;
+  transition: transform 500ms linear, -webkit-transform 500ms linear;
+}
+@media screen and (max-width: 767px) {
+  .menu-burger {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.menu-burger.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .logo-studio-footer {
@@ -545,13 +579,34 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
+@media screen and (max-width: 767px) {
+  .menu-link {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+  }
+}
 
 .menu-item {
   margin-right: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .menu-item {
+    margin: 0;
+  }
 }
 
 .menu-item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .menu-item:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .menu-link.current {
@@ -580,13 +635,20 @@ img {
   /* background: #2196F3; */
   border-radius: 2px;
 }
+@media screen and (max-width: 767px) {
+  .current::after {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: -10px;
+  }
+}
 
 .submenu {
+  display: none;
   position: absolute;
   top: 100%;
   left: -15px;
   width: 155%;
-  display: none;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -617,22 +679,35 @@ img {
 }
 @media screen and (max-width: 767px) {
   .contacts {
-    display: none;
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 }
 .contacts-item {
   margin-right: 50px;
 }
+@media screen and (max-width: 767px) {
+  .contacts-item {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
 .contacts-item:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 767px) {
+  .contacts-item:last-child {
+    margin-bottom: 0;
+  }
+}
 .contacts-svg {
   margin-right: 10px;
+  width: 15px;
+  height: 20px;
+  vertical-align: sub;
 }
 .contacts-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -655,6 +730,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media screen and (max-width: 767px) {
+  .contacts,
+  .contacts-link {
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    margin-right: 0;
+  }
 }
 
 .overlay {
