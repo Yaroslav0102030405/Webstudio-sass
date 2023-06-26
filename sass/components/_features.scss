@@ -1,16 +1,11 @@
 .features-list {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // display: flex;
     flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
   }
 }
 
@@ -38,8 +33,13 @@
     height: 120px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
     height: 120px;
   }
 }
@@ -99,18 +99,30 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;
   }
+}
 
-  &:nth-child(2n) {
-    @media screen and (min-width: 768px) {
-      margin-right: 0;
-    }
-  }
-
-  &:last-child {
+.features-item:nth-child(2n) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 0;
+  }
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.features-item:nth-child(n + 3) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 0;
+  }
+}
+
+.features-item:nth-child(n + 1) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }

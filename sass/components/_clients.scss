@@ -1,18 +1,16 @@
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
-
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
   }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .clients {
-  // display: block;
   text-align: center;
 }
 
@@ -34,16 +32,44 @@
 }
 
 .clients-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  // margin-right: 30px;
+  margin-bottom: 30px;
   @media screen and (min-width: 480px) {
     margin-bottom: 30px;
   }
 
-  &-item:nth-child(n + 3) {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.clients-item:nth-child(n + 4) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 0;
+  }
+}
+
+.clients-item:nth-child(n + 1) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.clients-item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+
+.clients-item:last-child {
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+
+.clients-item:nth-child(3n) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 0;
   }
 }
 
@@ -53,7 +79,7 @@
   align-items: center;
   width: 170px;
   height: 90px;
-  margin-right: 30px;
+  // margin-right: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
@@ -69,14 +95,24 @@
     height: 90px;
   }
 
-  &-logo:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+    height: 90px;
   }
 
-  &-logo:hover,
-  &-logo:focus {
-    fill: $accent-color;
-    color: #2196f3;
-    border: 1px solid $accent-color;
+    @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 90px;
   }
+}
+
+// &-logo:last-child {
+//   margin-right: 0;
+// }
+
+.clients-logo:hover,
+.clients-logo:focus {
+  fill: $accent-color;
+  color: #2196f3;
+  border: 1px solid $accent-color;
 }
