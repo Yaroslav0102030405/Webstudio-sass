@@ -1,59 +1,72 @@
-.clients {
-  display: block;
-  text-align: center;
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
 
-  &-title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-
-    color: $black-color;
-
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
-
-      font-size: 28px;
-      letter-spacing: 0.84px;
-    }
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
   }
 
-  &-item {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+}
 
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
-    }
+.clients {
+  // display: block;
+  text-align: center;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  color: $black-color;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
   }
 
   &-item:nth-child(n + 3) {
     margin-bottom: 0;
   }
+}
 
-  &-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
+.clients-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  fill: #afb1b8;
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
     height: 90px;
-    margin-right: 30px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-
-    fill: #afb1b8;
-    cursor: pointer;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-      border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-    @media screen and (min-width: 480px) {
-      width: 210px;
-      height: 90px;
-    }
   }
 
   &-logo:last-child {
@@ -67,53 +80,3 @@
     border: 1px solid $accent-color;
   }
 }
-
-// .clients-title {
-//   margin-bottom: 50px;
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.16;
-//   letter-spacing: 0.03em;
-
-//   color: $black-color;
-// }
-
-.clients-flex {
-  display: flex;
-  justify-content: center;
-}
-
-// .clients-item {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   /* display: inline-flex; */
-// }
-
-// .clients-logo {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 170px;
-//   height: 90px;
-//   margin-right: 30px;
-//   border: 1px solid #afb1b8;
-//   border-radius: 4px;
-
-//   fill: #afb1b8;
-//   cursor: pointer;
-
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-//     color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-//     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-// }
-
-// .clients-logo:last-child {
-//   margin-right: 0;
-// }
-
-// .clients-logo:hover {
-//   fill: $accent-color;
-//   color: #2196f3;
-//   border: 1px solid $accent-color;
-// }

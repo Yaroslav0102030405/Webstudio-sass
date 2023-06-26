@@ -52,43 +52,6 @@ section {
   justify-content: space-between;
 }
 
-.features-flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.team-flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.clients-flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .center {
   text-align: center;
 }
