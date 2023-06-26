@@ -14,7 +14,7 @@
 
   color: $white-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     margin-top: 60px;
   }
 }
@@ -27,7 +27,7 @@
   display: flex;
   align-items: baseline;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
    display: block;
    text-align: center;
   }
@@ -36,7 +36,7 @@
 .address-icon {
   margin-left: 70px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     margin-left: 0;
     
   }

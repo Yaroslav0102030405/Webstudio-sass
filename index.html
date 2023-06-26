@@ -16,27 +16,32 @@
       
       <div class="container">
 
-      <div class="header-mobile-menu">
+      <div class="tablet-wrap">
+
+        <div class="mobile-wrap">
+
           <a class="logo" href="#">
             <span class="logo-web">Web</span
             ><span class="logo-studio">Studio</span>
              </a>
-            <div class="margin">
-        <button type="button" class="menu-button is-open" data-menu-button>
+            <!-- <div class="margin"> -->
+        <button type="button" class="mobile-btn is-open" data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="icon-close" href="./images/sprite.svg#icon-menu_40px"></use>
             <use class="icon-menu" href="./images/sprite.svg#icon-close_40px"></use>
           </svg>
         </button>
+        </div>
+
         <div class="menu-burger" data-menu>
-           <nav class="header-flex-container">
-          <ul class="menu header-flex-container">
+           <nav class="header-container">
+          <ul class="menu header-container">
             <li class="menu-item">
               <a class="menu-link current" href="">Студия</a></li>
             <li class="menu-item">
               <a class="menu-link" href="">Портфолио</a>
 
-              <ul class="submenu">
+              <!-- <ul class="submenu">
                 <li class="submenu-item">
                   <a class="submenu-link" href="">QA</a>
                 </li>
@@ -55,12 +60,12 @@
                 <li class="submenu-item">
                   <a class="submenu-link" href="">Desing</a>
                 </li>
-              </ul>
+              </ul> -->
             </li>
             <li class="menu-item"><a class="menu-link" href="">Контакты</a></li>
           </ul>
-  
-        <ul class="contacts header-flex-container">
+  <dir class="margin-left">
+        <ul class="contacts margin-left">
           <li class=" contacts-item">
             <a class="contacts-link contacts-icon"
               href="mailto:info@example.com"
@@ -81,13 +86,12 @@
             </a>
           </li>
         </ul>
+        </dir>
         </nav>
       </div>
-     </div>
-          
+     </div>  
         </div>
           </div>
-
 
     </header>
     <main>

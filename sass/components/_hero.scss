@@ -33,7 +33,7 @@
     font-size: 44px;
     line-height: 60px;
 
-    @media  screen and (max-width: 1140px) {
+    @media  screen and (min-width: 480px) {
       font-size: 26px;
       line-height: 42px;
       letter-spacing: 1.56px;

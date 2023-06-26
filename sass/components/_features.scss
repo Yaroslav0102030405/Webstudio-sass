@@ -1,5 +1,5 @@
 .features .features-title {
-   @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     text-align: center;
   }
 }
@@ -19,6 +19,11 @@
 
   @media screen and (max-width: 767px) {
     width: 450px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
     height: 120px;
   }
 }
@@ -66,7 +71,7 @@
 
   color: var(--text-color);
 
-  @media screen and (max-width: 1140px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
 
     font-family: Roboto;
@@ -78,6 +83,17 @@
 .features-item {
   margin-right: 30px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 1 * 30px) / 2);
+    margin-right: 30px;
+  }
+
+  &:nth-child(2n) {
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
