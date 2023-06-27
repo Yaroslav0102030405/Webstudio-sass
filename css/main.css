@@ -523,10 +523,8 @@ img {
     visibility: hidden;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    -webkit-transition: -webkit-transform 500ms linear;
-    transition: -webkit-transform 500ms linear;
-    transition: transform 500ms linear;
-    transition: transform 500ms linear, -webkit-transform 500ms linear;
+    -webkit-transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 60px;
     padding-bottom: 60px;
   }
