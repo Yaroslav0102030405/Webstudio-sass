@@ -7,6 +7,10 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
   }
+
+   @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .features .features-title {
