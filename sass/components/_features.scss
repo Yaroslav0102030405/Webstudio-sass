@@ -14,7 +14,7 @@
 }
 
 .features .features-title {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1600px) {
     text-align: center;
   }
 }
@@ -114,6 +114,12 @@
     margin-right: 0;
   }
 }
+
+  .features-item:nth-child(n + 4) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 
 .features-item:last-child {
   margin-right: 0;

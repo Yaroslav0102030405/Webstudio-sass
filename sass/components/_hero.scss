@@ -1,6 +1,7 @@
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  // height: 600px;
+  height: auto;
   margin: 0 auto;
 
   background-image: url(../images/hero.jpg);
@@ -23,23 +24,30 @@
   text-transform: uppercase;
 }
 
-  .hero-title {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 30px;
+.hero-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 
-    color: $white-color;
+  color: $white-color;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
 
-    @media  screen and (min-width: 480px) {
-      font-size: 26px;
-      line-height: 42px;
-      letter-spacing: 1.56px;
-    }
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    font-family: Roboto;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+  }
+}
 
 // .hero-title {
 //   margin: 0;
@@ -74,7 +82,8 @@
 
   &:hover,
   &:focus {
-    background-color: deeppink;
+    // background-color: deeppink;
+    background-color: #188ce8;
   }
 
   &-clouse {
@@ -144,6 +153,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: auto;
+  }
+
   &-icon {
     position: absolute;
     top: 8px;
@@ -165,26 +180,32 @@
   }
 }
 
-  .form-title {
-    text-align: center;
-    margin-bottom: 30px;
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
 
-    font-weight: 700;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  @media screen and (max-width: 1199px) {
     font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-
-    color: #212121;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
   }
+}
 
-  .form-input {
-    padding-left: 15px;
-    margin-bottom: 30px;
+.form-input {
+  padding-left: 15px;
+  margin-bottom: 30px;
 
-    width: 100%;
-    height: 40px;
-    cursor: pointer;
-  }
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
 
 // .form-icon {
 //   position: absolute;
@@ -240,6 +261,11 @@ textarea {
 
   width: 100%;
   cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    width: 370px;
+    height: 120px;
+  }
 }
 
 .real-checkbox {
@@ -302,6 +328,11 @@ textarea {
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    letter-spacing: 0.12px;
+  }
 }
 
 .form-link {
