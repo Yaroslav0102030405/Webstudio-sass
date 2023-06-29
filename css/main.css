@@ -779,7 +779,7 @@ img {
 }
 
 .overlay {
-  max-width: 480px;
+  width: 480px;
   height: 400px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -811,7 +811,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    max-width: 768px;
+    width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero/bg-img-768.webp");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bg-img-768.webp");
   }
@@ -835,7 +835,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero/bg-img-1200.webp");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bg-img-1200.webp");
@@ -1531,6 +1531,12 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .clients-list {
@@ -1636,8 +1642,6 @@ label {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  max-width: 210px;
-  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;

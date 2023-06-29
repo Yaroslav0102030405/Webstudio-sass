@@ -1,6 +1,9 @@
+
 .clients-list {
   display: flex;
-  // justify-content: center;
+  // width: 480px;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
@@ -30,7 +33,6 @@
 
   @media screen and (min-width: 480px) {
     margin-bottom: 30px;
-
     font-size: 28px;
     letter-spacing: 0.84px;
   }
@@ -95,8 +97,8 @@
   text-align: center;
   // vertical-align: middle;
   // vertical-align: baseline;
-  max-width: 210px;
-  height: 90px;
+  // width: 210px;
+  // height: 90px;
   // margin-right: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
