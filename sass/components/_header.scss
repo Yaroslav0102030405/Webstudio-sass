@@ -162,6 +162,10 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
+
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
+      0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -202,7 +206,7 @@
   @media screen and (max-width: 767px) {
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.36px;
   }
 
@@ -232,6 +236,11 @@
 .menu-item {
   margin-bottom: 40px;
   padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -326,7 +335,7 @@
   // padding-bottom: 20px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 60px;
+    margin-top: 22px;
     padding-bottom: 0;
   }
 
@@ -373,7 +382,8 @@
   margin-right: 10px;
   width: 15px;
   height: 20px;
-  vertical-align: sub;
+  // vertical-align: sub;
+  vertical-align: -35%;
 }
 
 .contacts-icon {
@@ -405,7 +415,7 @@
   color: $text-color;
 
   @media screen and (max-width: 767px) {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.36px;
   }
 }

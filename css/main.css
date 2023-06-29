@@ -286,8 +286,8 @@ section {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .features,
@@ -527,6 +527,9 @@ img {
     transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 60px;
     padding-bottom: 60px;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -565,7 +568,7 @@ img {
   .menu-link {
     padding-top: 0;
     padding-bottom: 0;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.36px;
   }
 }
@@ -615,6 +618,12 @@ img {
 .menu-item {
   margin-bottom: 40px;
   padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .menu-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-item {
@@ -678,7 +687,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .menu-contacts {
-    padding-top: 60px;
+    margin-top: 22px;
     padding-bottom: 0;
   }
 }
@@ -734,7 +743,7 @@ img {
   margin-right: 10px;
   width: 15px;
   height: 20px;
-  vertical-align: sub;
+  vertical-align: -35%;
 }
 
 .contacts-icon {
@@ -764,13 +773,13 @@ img {
 }
 @media screen and (max-width: 767px) {
   .contacts-link {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.36px;
   }
 }
 
 .overlay {
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -802,7 +811,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    width: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero/bg-img-768.webp");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bg-img-768.webp");
   }
@@ -814,7 +823,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    width: 768px;
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero/bg-img-768.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bg-img-768.jpg");
   }
@@ -826,7 +835,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero/bg-img-1200.webp");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bg-img-1200.webp");
@@ -1165,19 +1174,19 @@ label {
 }
 @media screen and (max-width: 767px) {
   .features-item::before {
-    width: 450px;
+    max-width: 450px;
     height: 120px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-item::before {
-    width: 354px;
+    max-width: 354px;
     height: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features-item::before {
-    width: 270px;
+    max-width: 270px;
     height: 120px;
   }
 }
@@ -1226,7 +1235,7 @@ label {
 }
 @media screen and (max-width: 767px) {
   .features-text {
-    width: 450px;
+    max-width: 450px;
     font-family: Roboto;
     line-height: 24px;
     letter-spacing: 0.42px;
@@ -1236,6 +1245,11 @@ label {
 .features-item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .features-item {
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-item {
@@ -1622,7 +1636,7 @@ label {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
