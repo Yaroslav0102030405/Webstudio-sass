@@ -225,6 +225,7 @@
 } */
 
 .form {
+  display: inline-block;
   /* поставить по центру */
   position: absolute;
   top: 50%;
@@ -232,7 +233,7 @@
   transform: translate(-50%, -50%);
 
   /* position: relative; */
-  width: 528px;
+  
   /* margin-right: auto;
   margin-left: auto; */
   padding: 40px;
@@ -244,10 +245,16 @@
 
   @media screen and (max-width: 1199px) {
     width: 450px;
-    height: auto;
+   height: auto;
   }
 
-  &-icon {
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  height: auto;
+  }
+
+  .form-icon {
+    display: inline-block;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -262,7 +269,7 @@
     cursor: pointer;
   }
 
-  &-icon:hover,
+    &-icon:hover,
   &-icon:focus {
     fill: $accent-color;
   }

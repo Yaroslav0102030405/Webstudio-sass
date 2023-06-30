@@ -231,10 +231,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -947,6 +943,7 @@ img {
   background-color: var(--white-color);
 } */
 .form {
+  display: inline-block;
   /* поставить по центру */
   position: absolute;
   top: 50%;
@@ -954,7 +951,6 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   /* position: relative; */
-  width: 528px;
   /* margin-right: auto;
   margin-left: auto; */
   padding: 40px;
@@ -969,7 +965,14 @@ img {
     height: auto;
   }
 }
-.form-icon {
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 528px;
+    height: auto;
+  }
+}
+.form .form-icon {
+  display: inline-block;
   position: absolute;
   top: 8px;
   right: 8px;
