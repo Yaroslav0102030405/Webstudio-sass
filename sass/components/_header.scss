@@ -1,7 +1,6 @@
 .header {
   position: fixed;
   // position: relative;
-  // position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -43,18 +42,6 @@
     align-items: center;
   }
 }
-
-// .header-wrap {
-// display: flex;
-//    @media  screen and (max-width: 767px) {
-//     flex-direction: column;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     justify-content: center;
-//   }
-// }
 
 .mobile-wrap {
   @media screen and (max-width: 767px) {

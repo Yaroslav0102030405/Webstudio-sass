@@ -5,16 +5,19 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
-    justify-content: center;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   justify-content: center;
+  // }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     flex-wrap: wrap;
+  }
+  @media screen and (max-width: 479px) {
+   display: inline-block;
   }
 }
 

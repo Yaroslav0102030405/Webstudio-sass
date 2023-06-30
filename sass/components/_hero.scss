@@ -1,9 +1,9 @@
 .overlay {
   // max-width: 1600px;
   // height: 600px;
-  width: 480px;
+  // width: 480px;
   // height: auto;
-  height: 400px;
+  // height: 400px;
   margin: 0 auto;
 
   // background-image: url(../images/hero.jpg);
@@ -15,6 +15,7 @@
   /* если картинка не отрисуеться то будет фон */
 
   @media screen and (max-width: 767px) {
+    max-width: 480px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -28,6 +29,7 @@
   }
 
   @media screen and (max-width: 767px) {
+    max-width: 480px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -111,7 +113,6 @@
 }
 
 .hero-title {
-
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
@@ -234,7 +235,6 @@
   width: 528px;
   /* margin-right: auto;
   margin-left: auto; */
-
   padding: 40px;
 
   background: $white-color;
@@ -349,6 +349,8 @@ textarea {
 
   width: 100%;
   cursor: pointer;
+  width: 448px;
+  height: 120px;
 
   @media screen and (max-width: 1199px) {
     width: 370px;

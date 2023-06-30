@@ -225,6 +225,7 @@ summary {
 /* Базовые настройки ------------ */
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--white-color);
   color: var(--text-color);
   font-family: Roboto, sans-serif;
@@ -272,22 +273,19 @@ section {
   }
 }
 
-.flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .center {
   text-align: center;
 }
 
 .hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .features,
@@ -322,6 +320,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  padding: 0;
   /* padding: 0;
   margin: 0; */
   color: var(--title-color);
@@ -779,8 +778,6 @@ img {
 }
 
 .overlay {
-  width: 480px;
-  height: 400px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -789,6 +786,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .overlay {
+    max-width: 480px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero/bh-img-480.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bh-img-480.jpg");
   }
@@ -800,6 +798,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .overlay {
+    max-width: 480px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero/bh-img-480.webp");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bh-img-480.webp");
   }
@@ -1024,6 +1023,8 @@ textarea {
   resize: none;
   width: 100%;
   cursor: pointer;
+  width: 448px;
+  height: 120px;
 }
 @media screen and (max-width: 1199px) {
   textarea {
@@ -1538,23 +1539,21 @@ label {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1200px) {
-  .clients-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .clients-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 479px) {
+  .clients-list {
+    display: inline-block;
   }
 }
 

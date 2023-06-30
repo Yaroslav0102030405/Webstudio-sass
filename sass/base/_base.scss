@@ -1,8 +1,18 @@
 /* Базовые настройки ------------ */
 
+// при открытии модалки убрать дергание сайт
+// html.pum-open.pum-open-overlay.pum-open-scrollable .pum-overlay.pum-active {
+//     -webkit-overflow-scrolling: touch;}
+// html { overflow-y: scroll !important; }
+
+// html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden] {
+// padding-right: 0 !important;
+//     -webkit-overflow-scrolling: touch;}
+// html { overflow-y: scroll !important; }
+
 body {
   margin: 0;
-  // padding: 0;
+  padding: 0;
 
   background-color: var(--white-color);
   color: var(--text-color);
@@ -51,18 +61,22 @@ section {
   }
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
+// .flex-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .center {
   text-align: center;
 }
 
 .hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .features,
@@ -99,6 +113,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  padding: 0;
   /* padding: 0;
   margin: 0; */
   color: var(--title-color);
