@@ -155,28 +155,55 @@
           <h2 class="work-title center">Чем мы занимаемся</h2>
           <ul class="work-list work-flex-container">
             <li class="work-item">
+              <picture>
+                <source srcset="
+                ./images/work/work-img-370-1x.webp 1x,
+                ./images/work/work-img-740-2x.webp 2x"
+                type="image/webp">
               <img
                 class="work-image"
-                src="./images/work/img-0.jpg"
+                srcset="
+                ./images/work/work-img-370-1x.jpg 1x,
+                ./images/work/work-img-740-2x.jpg 2x"
+                src="./images/work/work1.jpg"
                 alt="разработка сайтов"
-                width="370"
+                width="370" height="294"
               />
+            </picture>
             </li>
             <li class="work-item">
+              <picture>
+                <source srcset="
+                ./images/work/work2/work2-img-1x.webp 1x,
+                ./images/work/work2/work2-img-2x.webp 2x"
+                type="image/webp">
               <img
                 class="work-image"
-                src="./images/work/img-1.jpg"
+                srcset="
+                ./images/work/work2/work2-img-1x.jpg 1x,
+                ./images/work/work2/work2-img-2x.jpg 2x"
+                src="./images/work/work2/work2-img.jpg"
                 alt="разработка мобильных приложений"
-                width="370"
+                width="370" height="294"
               />
+            </picture>
             </li>
             <li class="work-item">
+              <picture>
+                <source srcset="
+                ./images/work/work3/work3-img-370-1x.webp 1x,
+                ./images/work/work3/work3-img-740-2x.webp 2x"
+                type="image/webp" >
               <img
                 class="work-image"
-                src="./images/work/img-2.jpg"
+                srcset="
+                ./images/work/work3/work3-img-370-1x.jpg 1x,
+                ./images/work/work3/work3-img-740-2x.jpg 2x"
+                src="./images/work/work3/work3-img-370.jpg"
                 alt="созданием фирменного стиля"
-                width="370"
+                width="370" height="294"
               />
+            </picture>
             </li>
           </ul>
         </div>
@@ -186,11 +213,15 @@
           <h2 class="team-title center">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
+         <picture>
+          <source srcset="./images/team/product-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
+          <source srcset="./images/team/product-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
+           <source srcset="./images/team/product-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
               <img
                 src="./images/team/img-3.jpg"
                 alt="продукт дизайнер"
-                width="270"
-              />
+                width="270" height="260"/>
+            </picture>
               <h3 class="team-subtitle">Игорь Демьяненко</h3>
               <p class="team-text">Product Designer</p>
               <ul class="team-flex">
@@ -246,11 +277,17 @@
             </li>
 
             <li class="team-item">
+              <picture>
+                <source srcset="./images/team/frontend-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
+                <source srcset="./images/team/frontend-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
+                 <source srcset="./images/team/frontend-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
               <img
                 src="./images/team/img-4.jpg"
                 alt="фронтенд разработчик"
                 width="270"
               />
+            </picture>
+
               <h3 class="team-subtitle">Ольга Репина</h3>
               <p class="team-text">Frontend Developer</p>
               <ul class="team-flex">
@@ -306,7 +343,15 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/team/img-5.jpg" alt="маркетолог" width="270" />
+
+              <picture>
+                <source srcset="./images/team/marketing-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
+                <source srcset="./images/team/marketing-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
+                 <source srcset="./images/team/marketing-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
+
+              <img src="./images/team/img-5.jpg" alt="маркетолог" width="270" height="260" />
+            </picture>
+
               <h3 class="team-subtitle">Николай Тарасов</h3>
               <p class="team-text">Marketing</p>
               <ul class="team-flex">
@@ -362,11 +407,19 @@
             </li>
 
             <li class="team-item">
+
+              <picture>
+                <source srcset="./images/team/designer-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
+                <source srcset="./images/team/designer-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
+                 <source srcset="./images/team/designer-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
+
               <img
                 src="./images/team/img-6.jpg"
                 alt="дизайнер интерфейса пользователя"
                 width="270"
               />
+            </picture>
+
               <h3 class="team-subtitle">Михаил Ермаков</h3>
               <p class="team-text">UI Designer</p>
               <ul class="team-flex">
