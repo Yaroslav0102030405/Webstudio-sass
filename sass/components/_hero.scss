@@ -137,8 +137,9 @@
 // }
 
 .btn {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
+  margin-top: 30px;
   padding: 10px 32px;
 
   font-weight: 700;
@@ -212,6 +213,7 @@
 } */
 
 .form {
+  
   display: inline-block;
   /* поставить по центру */
   position: absolute;
