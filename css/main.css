@@ -957,7 +957,6 @@ img {
 @media screen and (max-width: 1199px) {
   .form {
     width: 450px;
-    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
