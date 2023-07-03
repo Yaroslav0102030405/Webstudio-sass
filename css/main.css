@@ -231,6 +231,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  body.modal-open {
+    overflow: hidden;
+  }
+}
+
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -356,6 +362,7 @@ img {
   top: 0;
   left: 0;
   background-color: inherit;
+  z-index: 998;
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -778,7 +785,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* если картинка не отрисуеться то будет фон */
 }
 @media screen and (max-width: 767px) {
   .overlay {
@@ -909,7 +915,7 @@ img {
   background-color: var(--white-color);
 } */
 .form {
-  display: inline-block;
+  display: block;
   /* поставить по центру */
   position: absolute;
   top: 50%;
@@ -917,9 +923,6 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  /* position: relative; */
-  /* margin-right: auto;
-  margin-left: auto; */
   padding: 40px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -928,22 +931,19 @@ img {
 }
 @media screen and (max-width: 767px) {
   .form {
+    max-width: 450px;
     margin-top: 93px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form {
-    margin-top: 208px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .form {
     max-width: 450px;
+    margin-top: 208px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form {
-    width: 528px;
+    max-width: 528px;
     height: auto;
   }
 }

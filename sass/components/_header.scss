@@ -6,7 +6,7 @@
   left: 0;
   // min-height: 60px;
   background-color: inherit;
-  // z-index: 998;
+  z-index: 998;
 
   @media screen and (max-width: 767px) {
     padding-top: 10px;
@@ -122,7 +122,7 @@
 .menu-burger {
   @media screen and (max-width: 767px) {
     // display: none;
-    position: absolute;
+   position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -156,7 +156,6 @@
   opacity: 1;
   visibility: visible;
   // pointer-events: none;
-
   transform: translateY(0);
 }
 

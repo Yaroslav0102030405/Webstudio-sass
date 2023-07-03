@@ -1,20 +1,10 @@
 
 
 .overlay {
-  // max-width: 1600px;
-  // height: 600px;
-  // width: 480px;
-  // height: auto;
-  // height: 400px;
   margin: 0 auto;
-
-  // background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  // background-color: rgba(47, 48, 58, 0.4);
-  /* если картинка не отрисуеться то будет фон */
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
@@ -27,28 +17,6 @@
     }
   }
 
-  // @media screen and (max-width: 767px) {
-  //   max-width: 480px;
-  //   background-image:
-  //     url('/images/hero/bh-img-480.webp');
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url('/images/hero/bh-img-480-2x.webp');
-  //   }
-  // }
-
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   width: 768px;
-  //   background-image:
-  //     url('/images/hero/bg-img-768.webp');
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url('/images/hero/bg-img-768-2x.webp');
-  //   }
-  // }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
     background-image:
@@ -59,18 +27,6 @@
       background-image: url('../images/hero/bg-img-768-2x.jpg');
     }
   }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 1600px;
-  //   height: 600px;
-  //   background-image:
-  //     url('/images/hero/bg-img-1200.webp');
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url('/images/hero/bg-img-1200-2x.webp');
-  //   }
-  // }
 
   @media screen and (min-width: 1200px) {
     width: 1600px;
@@ -124,18 +80,6 @@
   }
 }
 
-// .hero-title {
-//   margin: 0;
-//   padding: 0;
-//   margin-bottom: 30px;
-
-//   color: $white-color;
-
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 60px;
-// }
-
 .btn {
   display: block;
   margin: 0 auto;
@@ -170,18 +114,6 @@
   }
 }
 
-// .btn:hover,
-// .btn:focus {
-//   background-color: darkorchid;
-// }
-
-// .btn-clouse {
-//   padding: 0;
-//   margin: 0;
-//   border: none;
-//   background-color: $white-color;
-// }
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -213,8 +145,7 @@
 } */
 
 .form {
-  
-  display: inline-block;
+  display: block;
   /* поставить по центру */
   position: absolute;
   top: 50%;
@@ -222,10 +153,6 @@
   transform: translate(-50%, -50%);
   width: 100%;
 
-  /* position: relative; */
-  
-  /* margin-right: auto;
-  margin-left: auto; */
   padding: 40px;
 
   background: $white-color;
@@ -234,20 +161,16 @@
   border-radius: 4px;
 
   @media  screen and (max-width: 767px) {
+    max-width: 450px;
     margin-top: 93px;
   }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 450px;
     margin-top: 208px;
   }
 
-  @media screen and (max-width: 1199px) {
-    max-width: 450px;
-  //  height: auto;
-  }
-
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    max-width: 528px;
   height: auto;
   }
 
@@ -299,46 +222,6 @@
   height: 40px;
   cursor: pointer;
 }
-
-// .form-icon {
-//   position: absolute;
-//   top: 8px;
-//   right: 8px;
-//   padding: 4px;
-//   width: 30px;
-//   height: 30px;
-
-//   color: $black-color;
-
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   border-radius: 50%;
-//   cursor: pointer;
-// }
-
-// .form-icon:hover {
-//   fill: $accent-color;
-// }
-
-// .form-title {
-//   text-align: center;
-//   margin-bottom: 30px;
-
-//   font-weight: 700;
-//   font-size: 20px;
-//   line-height: 1.15;
-//   letter-spacing: 0.03em;
-
-//   color: #212121;
-// }
-
-// .form-input {
-//   padding-left: 15px;
-//   margin-bottom: 30px;
-
-//   width: 100%;
-//   height: 40px;
-//   cursor: pointer;
-// }
 
 .form-input:hover,
 .form-input:focus,
