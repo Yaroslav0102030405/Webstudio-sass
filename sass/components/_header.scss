@@ -1,12 +1,13 @@
 .header {
-  // position: fixed;
-  position: relative;
+  position: fixed;
+  // position: relative;
   top: 0;
   left: 0;
   // min-height: 60px;
   width: 100%;
+
   background-color: inherit;
-  z-index: 998;
+  z-index: 100;
 
   @media screen and (max-width: 767px) {
     padding-top: 10px;

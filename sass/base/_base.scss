@@ -18,6 +18,15 @@ body {
   color: var(--text-color);
 
   font-family: Roboto, sans-serif;
+
+  @media  screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+
+  @media  screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+
 }
 
 // * Запретить скролл под модальнім окном
