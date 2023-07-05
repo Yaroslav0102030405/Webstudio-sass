@@ -87,21 +87,6 @@
   }
 }
 
-.element-animation {
-  // margin: 2rem 0;
-  // font-size: 3rem;
-  
-  /* Скроем элемент в начальном состоянии */
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.element-animation.element-show {
-  opacity: 1;
-  transition: all 1.5s;
-  transform: translateY(0%);
-}
-
 // .hero-title.active {
 //   transform: translate(0px, 0px);
 //   opacity: 1;

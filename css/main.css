@@ -865,21 +865,6 @@ img {
   }
 }
 
-.element-animation {
-  /* Скроем элемент в начальном состоянии */
-  opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-}
-
-.element-animation.element-show {
-  opacity: 1;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
 .btn {
   display: block;
   margin: 0 auto;
@@ -1787,4 +1772,19 @@ label {
 .footer-icon {
   width: 20px;
   height: 20px;
+}
+
+.element-animation {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }/*# sourceMappingURL=main.css.map */
