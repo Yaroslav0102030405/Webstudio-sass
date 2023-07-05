@@ -357,10 +357,10 @@ img {
 }
 
 .header {
-  position: fixed;
-  width: 100%;
+  position: relative;
   top: 0;
   left: 0;
+  width: 100%;
   background-color: inherit;
   z-index: 998;
 }
