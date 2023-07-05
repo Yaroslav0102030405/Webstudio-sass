@@ -12,12 +12,11 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
+
     <header class="header">
       
       <div class="container">
-
       <div class="header-wrap">
-
         <div class="mobile-wrap">
 
           <a class="logo" href="./index.html">
@@ -39,7 +38,7 @@
             <li class="menu-item">
               <a class="menu-link current" href="">Студия</a></li>
             <li class="menu-item">
-              <a class="menu-link" href="">Портфолио</a>
+              <a class="menu-link" href="./portfolio.html">Портфолио</a>
 
               <!-- <ul class="submenu">
                 <li class="submenu-item">
@@ -86,8 +85,9 @@
             </a>
           </li>
         </ul>
-        </dir>
+       
         </nav>
+      </div>
       </div>
      </div>  
           <!-- </div> -->
@@ -112,7 +112,7 @@
         </section>
         <!-- раздел, объединяющий содержание по смыслу -->
       </div>
-      </div>
+     
 
       <section class="features">
         <div class="container">
@@ -157,14 +157,14 @@
             <li class="work-item element-animation">
               <picture>
                 <source srcset="
-                ./images/work/work-img-370-1x.webp 1x,
-                ./images/work/work-img-740-2x.webp 2x"
+                ./images/work/work-img-370@1x.webp 1x,
+                ./images/work/work-img-740@2x.webp 2x"
                 type="image/webp">
               <img
                 class="work-image"
                 srcset="
-                ./images/work/work-img-370-1x.jpg 1x,
-                ./images/work/work-img-740-2x.jpg 2x"
+                ./images/work/work-img-370@1x.jpg 1x,
+                ./images/work/work-img-740@2x.jpg 2x"
                 src="./images/work/work1.jpg"
                 alt="разработка сайтов"
                 width="370" height="294"
@@ -174,14 +174,14 @@
             <li class="work-item element-animation">
               <picture>
                 <source srcset="
-                ./images/work/work2/work2-img-1x.webp 1x,
-                ./images/work/work2/work2-img-2x.webp 2x"
+                ./images/work/work2/work2-img@1x.webp 1x,
+                ./images/work/work2/work2-img@2x.webp 2x"
                 type="image/webp">
               <img
                 class="work-image"
                 srcset="
-                ./images/work/work2/work2-img-1x.jpg 1x,
-                ./images/work/work2/work2-img-2x.jpg 2x"
+                ./images/work/work2/work2-img@1x.jpg 1x,
+                ./images/work/work2/work2-img@2x.jpg 2x"
                 src="./images/work/work2/work2-img.jpg"
                 alt="разработка мобильных приложений"
                 width="370" height="294"
@@ -191,14 +191,14 @@
             <li class="work-item element-animation">
               <picture>
                 <source srcset="
-                ./images/work/work3/work3-img-370-1x.webp 1x,
-                ./images/work/work3/work3-img-740-2x.webp 2x"
+                ./images/work/work3/work3-img-370@1x.webp 1x,
+                ./images/work/work3/work3-img-740@2x.webp 2x"
                 type="image/webp" >
               <img
                 class="work-image"
                 srcset="
-                ./images/work/work3/work3-img-370-1x.jpg 1x,
-                ./images/work/work3/work3-img-740-2x.jpg 2x"
+                ./images/work/work3/work3-img-370@1x.jpg 1x,
+                ./images/work/work3/work3-img-740@2x.jpg 2x"
                 src="./images/work/work3/work3-img-370.jpg"
                 alt="созданием фирменного стиля"
                 width="370" height="294"
@@ -214,9 +214,9 @@
           <ul class="team-list">
             <li class="team-item element-animation">
          <picture>
-          <source srcset="./images/team/product-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
+          <source srcset="./images/team/product-mobile.jpg" media="(max-width: 767px)" widht="450" height="460">
           <source srcset="./images/team/product-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
-           <source srcset="./images/team/product-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
+           <source srcset="./images/team/product-desctop.jpg" media="(min-width: 1200px)" width="270" height="260">
               <img
                 src="./images/team/img-3.jpg"
                 alt="продукт дизайнер"
@@ -278,9 +278,9 @@
 
             <li class="team-item element-animation">
               <picture>
-                <source srcset="./images/team/frontend-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
-                <source srcset="./images/team/frontend-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
-                 <source srcset="./images/team/frontend-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
+                <source srcset="./images/team/frontend-mobile.jpg" media="(max-width: 767px)" widht="450" height="460"  type="image/webp">
+                <source srcset="./images/team/frontend-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374">
+                 <source srcset="./images/team/frontend-desctop.jpg" media="(min-width: 1200px)" width="270" height="260" >
               <img
                 src="./images/team/img-4.jpg"
                 alt="фронтенд разработчик"
@@ -345,9 +345,9 @@
             <li class="team-item element-animation">
 
               <picture>
-                <source srcset="./images/team/marketing-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
+                <source srcset="./images/team/marketing-mobile.jpg" media="(max-width: 767px)" widht="450" height="460"  type="image/webp">
                 <source srcset="./images/team/marketing-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
-                 <source srcset="./images/team/marketing-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
+                 <source srcset="./images/team/marketing-desctop.jpg" media="(min-width: 1200px)" width="270" height="260" >
 
               <img src="./images/team/img-5.jpg" alt="маркетолог" width="270" height="260" />
             </picture>
@@ -409,9 +409,9 @@
             <li class="team-item element-animation">
 
               <picture>
-                <source srcset="./images/team/designer-mobile.jpg" media="(max-width: 767px)" widht="450" height="460" type="image/webp">
+                <source srcset="./images/team/designer-mobile.jpg" media="(max-width: 767px)" widht="450" height="460"  type="image/webp">
                 <source srcset="./images/team/designer-tablet.jpg" media="(min-width: 768px) and (max-width: 1199px)" width="354" height="374" >
-                 <source srcset="./images/team/designer-desctop.jpg" media="min-width: 1200px" width="270" height="260" >
+                 <source srcset="./images/team/designer-desctop.jpg" media="(min-width: 1200px)" width="270" height="260" >
 
               <img
                 src="./images/team/img-6.jpg"
@@ -474,8 +474,6 @@
               </ul>
             </li>
               </ul>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="clients">
@@ -517,6 +515,7 @@
         </div>
       </section>
     </main>
+    
     <footer class="footer">
       <!-- Подвал (футер) это финальная часть всей страницы -->
       <div class="container">
@@ -622,7 +621,7 @@
       </form>
     </div>
 
-    <script src="./js/header-height.js" type="module"></script>
+    <!-- <script src="./js/header-height.js" type="module"></script> -->
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/mobal-menu.js" type="module"></script>
     <!-- <script src="./js/animation-scroll.js" type="module"></script> -->
