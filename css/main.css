@@ -789,6 +789,7 @@ img {
 @media screen and (max-width: 767px) {
   .overlay {
     max-width: 480px;
+    max-height: 400px;
     background-image: url("../images/hero/bh-img-480.jpg");
   }
 }
