@@ -67,7 +67,11 @@
   // opacity: 0;
   // transition: transform 800ms;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 467px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 468px) and (max-width: 1199px) {
     max-width: 360px;
     font-size: 26px;
     line-height: 42px;

@@ -842,7 +842,12 @@ img {
   line-height: 1.36;
   letter-spacing: 2.64px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 467px) {
+  .hero-title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 468px) and (max-width: 1199px) {
   .hero-title {
     max-width: 360px;
     font-size: 26px;
