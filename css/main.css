@@ -1542,6 +1542,13 @@ label {
   margin-right: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .team img {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
