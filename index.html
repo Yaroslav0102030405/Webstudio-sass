@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css">
+
   </head>
   <body>
 
@@ -593,7 +594,7 @@
     </footer>
 
     <div class="backdrop is-hidden" data-backdrop>
-      <form class="form" action="sender.php" method="post">
+      <form class="form">
         <button data-close-modal class="btn-clouse" type="button">
         <svg class="form-icon">
           <use class="hover" href="./images/sprite.svg#icon-close-black"></use>
@@ -601,9 +602,9 @@
       </button>
         <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
         <!-- <label for="name">Имя</label> -->
-        <input class="form-input" type="text" name="name" id="name" autocomplete="name" placeholder="Имя" required>
+        <input class="form-input error" type="text" name="name" id="name" autocomplete="name" placeholder="Имя" required>
         <input class="form-input" type="tel" name="phone" id="phone" autocomplete="phone" placeholder="Телефон" required>
-        <input class="form-input" type="email" name="mail" id="mail" autocomplete="email" placeholder="Почта" required>
+        <input class="form-input" type="email" name="email" id="mail" autocomplete="email" placeholder="Почта" required>
         <textarea name="comment" id="comment" rows="10" placeholder="Комментарий"></textarea>
         
         <label>
@@ -613,8 +614,8 @@
          <a class="form-link" href="#"><span>Условия договора</span></a>
         </label>
         <!-- <p class="form-text"></p> -->
-        <button class="btn" type="button">Отправить</button>
-        <div class="status"></div>
+        <button class="btn" type="submit">Отправить</button>
+        <!-- <div class="status"></div> -->
       </form>
     </div>
 
@@ -625,10 +626,10 @@
     <script src="./js/animation.js"></script>
     <script src="./js/header-color.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="./js-form/jquery.maskedinput.js"></script>
     <script src="./js-form/jquery.validate.min.js"></script>
-    <script src="./js-form/script.js"></script>
+    <script src="./js-form/script.js"></script> -->
   </body>
 </html>
 <!-- Корневой элемент документа, который заключает в себе всё содержимое страницы. Все, что находится за его пределами, не воспринимается браузером как HTML-код и не обрабатывается -->
