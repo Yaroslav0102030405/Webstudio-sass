@@ -795,9 +795,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/hero/by-design.jpg);
-  width: 1600px;
-  height: 600px;
+  background-image: url(../images/hero/bg-ukraine.jpg);
 }
 
 .hero {
