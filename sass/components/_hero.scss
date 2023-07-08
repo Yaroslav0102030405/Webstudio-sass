@@ -3,47 +3,47 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/hero/bg-ukraine.jpg);
+ 
   
 
-  // @media screen and (max-width: 767px) {
-  //   max-width: 480px;
-  //   max-height: 400px;
-  //   background-image:
-  //     url("../images/hero/bh-img-480.jpg");
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url('../images/hero/bh-img-480-2x.jpg');
-  //   }
-  // }
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    max-height: 400px;
+    background-image:
+      url("../images/hero/bh-img-480.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bh-img-480-2x.jpg');
+    }
+  }
 
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   max-width: 768px;
-  //   background-image:
-  //     url('../images/hero/bg-img-768.jpg');
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url('../images/hero/bg-img-768-2x.jpg');
-  //   }
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+    background-image:
+      url('../images/hero/bg-img-768.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bg-img-768-2x.jpg');
+    }
+  }
 
-  // @media screen and (min-width: 1200px) {
-  //   width: 1600px;
-  //   height: 600px;
-  //   background-image:
-  //     url('../images/hero/bg-img-1200-1x.jpg');
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url('../images/hero/bg-img-1200-1x.jpg');
-  //   }
-  // }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+    background-image:
+      url('../images/hero/bg-img-1200-1x.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/bg-img-1200-1x.jpg');
+    }
+  }
 }
 
 .hero {
-  // background-color: rgba(47, 48, 58, 0.4);
+  background-color: rgba(47, 48, 58, 0.4);
 
   font-weight: 900;
   font-size: 44px;
