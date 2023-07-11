@@ -795,41 +795,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-@media screen and (max-width: 767px) {
-  .overlay {
-    max-width: 480px;
-    max-height: 400px;
-    background-image: url("../images/hero/bh-img-480.jpg");
-  }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url("../images/hero/bh-img-480-2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .overlay {
-    max-width: 768px;
-    background-image: url("../images/hero/bg-img-768.jpg");
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url("../images/hero/bg-img-768-2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .overlay {
-    width: 1600px;
-    height: 600px;
-    background-image: url("../images/hero/bg-img-1200-1x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .overlay {
-    background-image: url("../images/hero/bg-img-1200-1x.jpg");
-  }
+  background-image: url(../images/hero/bg-ukraine.jpg);
+  max-width: 1600px;
+  min-height: 600px;
 }
 
 .hero {
