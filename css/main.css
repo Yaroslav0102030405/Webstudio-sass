@@ -797,7 +797,7 @@ img {
   background-size: cover;
   background-image: url(../images/hero/bg-ukraine.jpg);
   max-width: 1600px;
-  min-height: 600px;
+  max-height: 600px;
 }
 
 .hero {
