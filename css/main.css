@@ -1828,6 +1828,7 @@ label {
   padding-left: 22px;
   padding-right: 22px;
   padding-bottom: 6px;
+  margin-bottom: 50px;
   border-radius: 4px;
   border: none;
   font-size: 16px;
@@ -1846,4 +1847,79 @@ label {
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box {
+  width: 370px;
+  height: 294px;
+  background-color: #2e5bb7;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.box:hover {
+  border: 1px solid #EEE;
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box.box:nth-child(3n) {
+  margin-right: 0;
+}
+
+.box:nth-child(n+7) {
+  margin-bottom: 0;
+}
+
+.box:nth-last-child(8) {
+  background-color: #a16ef2;
+}
+
+.box:nth-last-child(7) {
+  background-color: #e556dd;
+}
+
+.box:nth-last-child(6) {
+  background-color: #48b65e;
+}
+
+.box:nth-last-child(5) {
+  background-color: #f48f33;
+}
+
+.box:nth-last-child(4) {
+  background-color: #f34b70;
+}
+
+.box:nth-last-child(3) {
+  background-color: #27e3c9;
+}
+
+.box:nth-last-child(2) {
+  background-color: #e3c071;
+}
+
+.box:nth-last-child(1) {
+  background-color: #36e82d;
+}
+
+.box-2 {
+  width: 370px;
+  height: 50px;
+  background-color: aqua;
 }/*# sourceMappingURL=main.css.map */

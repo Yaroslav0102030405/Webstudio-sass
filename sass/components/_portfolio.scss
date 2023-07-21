@@ -13,6 +13,7 @@
     padding-left: 22px;
     padding-right: 22px;
     padding-bottom: 6px;
+    margin-bottom: 50px;
 
     border-radius: 4px;
     border: none;
@@ -36,4 +37,72 @@ letter-spacing: 0.48px;
 
 .filter-item:not(:last-child) {
     margin-right: 8px;
+}
+
+.box-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 370px;
+    height: 294px;
+    background-color: $fullstack;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.box:hover {
+border: 1px solid #EEE;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.box.box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.box:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
+.box:nth-last-child(8) {
+background-color: $frontend;
+}
+
+.box:nth-last-child(7) {
+ background-color: $design;
+}
+
+.box:nth-last-child(6) {
+background-color: $qa-manual;
+}
+
+.box:nth-last-child(5) {
+background-color: $python;
+}
+
+.box:nth-last-child(4) {
+background-color: $java;
+}
+
+.box:nth-last-child(3) {
+background-color: $smm;
+}
+
+.box:nth-last-child(2) {
+background-color: $data-analytics;
+}
+
+.box:nth-last-child(1) {
+ background-color: $it;
+}
+
+.box-2 {
+    width: 370px;
+    height: 50px;
+    background-color: aqua;
 }
