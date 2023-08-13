@@ -839,7 +839,6 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .hero-title {
@@ -1137,6 +1136,10 @@ label {
   margin-top: 30px;
   padding-left: 55px;
   padding-right: 55px;
+}
+
+.form-link {
+  text-decoration: underline;
 }
 
 .features-list {
@@ -1673,7 +1676,6 @@ label {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
 }
 @media screen and (min-width: 480px) {

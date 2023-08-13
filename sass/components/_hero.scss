@@ -48,7 +48,7 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
 
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .hero-title {
@@ -357,4 +357,8 @@ label {
   margin-top: 30px;
   padding-left: 55px;
   padding-right: 55px;
+}
+
+.form-link {
+ text-decoration: underline;
 }
