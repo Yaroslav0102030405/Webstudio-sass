@@ -48,26 +48,6 @@
                 <li class="menu-item">
                   <a class="menu-link" href="./portfolio.html">Portfolio</a>
 
-                  <!-- <ul class="submenu">
-                <li class="submenu-item">
-                  <a class="submenu-link" href="">QA</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="">Python</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="">Frontend</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="">Fullstack</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="">JavaScript</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="">Desing</a>
-                </li>
-              </ul> -->
                 </li>
                 <li class="menu-item">
                   <a class="menu-link" href="">Contacts</a>
@@ -176,12 +156,13 @@
                   type="image/webp"
                 />
                 <img
-                  class="work-image"
+                  loading="lazy"
+                  class=" lazyload work-image"
                   srcset="
                     ./images/work/work-img-370@1x.jpg 1x,
                     ./images/work/work-img-740@2x.jpg 2x
                   "
-                  src="./images/work/work1.jpg"
+                  data-src="./images/work/work1.jpg"
                   alt="разработка сайтов"
                   width="370"
                   height="294"
@@ -198,6 +179,7 @@
                   type="image/webp"
                 />
                 <img
+                  loading="lazy"
                   class="work-image"
                   srcset="
                     ./images/work/work2/work2-img@1x.jpg 1x,
@@ -220,12 +202,13 @@
                   type="image/webp"
                 />
                 <img
-                  class="work-image"
+                  loading="lazy"
+                  class=" lazyload work-image"
                   srcset="
                     ./images/work/work3/work3-img-370@1x.jpg 1x,
                     ./images/work/work3/work3-img-740@2x.jpg 2x
                   "
-                  src="./images/work/work3/work3-img-370.jpg"
+                  data-src="./images/work/work3/work3-img-370.jpg"
                   alt="созданием фирменного стиля"
                   width="370"
                   height="294"
@@ -254,7 +237,9 @@
                   srcset="./images/team/product-desctop.jpg"
                   media="(min-width: 1200px)"
                 />
-                <img src="./images/team/img-3.jpg" alt="продукт дизайнер" />
+                <img loading="lazy"
+                class="lazyload"
+                 data-src="./images/team/img-3.jpg" alt="продукт дизайнер" />
               </picture>
               <h3 class="team-subtitle">Igor Demyanenko</h3>
               <p class="team-text">Product Designer</p>
@@ -326,7 +311,9 @@
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/team/frontend-desctop.jpg"
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/team/frontend-desctop.jpg"
                   alt="фронтенд разработчик"
                 />
               </picture>
@@ -402,7 +389,9 @@
                 />
 
                 <img
-                  src="./images/team/marketing-desctop.jpg"
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/team/marketing-desctop.jpg"
                   alt="маркетолог"
                 />
               </picture>
@@ -480,7 +469,9 @@
                 />
 
                 <img
-                  src="./images/team/designer-desctop.jpg"
+                  loading="lazy"
+                  class="lazyload"
+                  data-src="./images/team/designer-desctop.jpg"
                   alt="маркетолог"
                 />
               </picture>
@@ -742,6 +733,8 @@
         <!-- <div class="status"></div> -->
       </form>
     </div>
+
+   <script src="./js/04-lazysizes.js" type="module"></script>
 
     <!-- <script src="./js/header-height.js" type="module"></script> -->
     <script src="./js/modal.js" type="module"></script>
