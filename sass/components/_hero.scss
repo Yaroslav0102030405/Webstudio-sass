@@ -138,7 +138,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   // чтоб не прокручивалась модалька
-  overflow-y: scroll;
+  // overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -179,7 +179,8 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  z-index: 10;
+  // z-index: 1;
+  overflow: scroll;
 
   // transition-property: opacity;
   // transition-duration: 250ms;

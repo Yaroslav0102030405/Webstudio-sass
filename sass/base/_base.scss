@@ -31,10 +31,8 @@ body {
 
 // * Запретить скролл под модальнім окном
 body.modal-open {
-  @media screen and (max-width: 767px) {
     overflow: hidden;
   }
-}
 
 
 /* скрыть заголовки и части текста */
