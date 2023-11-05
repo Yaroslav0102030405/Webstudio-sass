@@ -147,7 +147,8 @@
     transition: 800ms cubic-bezier(0.4, 0, 0.2, 1);
 
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 250px;
+    z-index: 1;
 
     background: #fff;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
