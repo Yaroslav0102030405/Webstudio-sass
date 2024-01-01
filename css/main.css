@@ -1551,6 +1551,15 @@ label {
   list-style-type: none;
   margin: 0px;
   padding-left: 0;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 @media screen and (max-width: 1199px) {
   .clients-list {
@@ -1559,6 +1568,27 @@ label {
   }
 }
 
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translatex(calc(10vw - 200px));
+            transform: translatex(calc(10vw - 200px));
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  100% {
+    -webkit-transform: translatex(calc(10vw - 200px));
+            transform: translatex(calc(10vw - 200px));
+  }
+}
 .clients-title {
   text-align: center;
   margin-bottom: 50px;
