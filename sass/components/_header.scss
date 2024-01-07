@@ -248,6 +248,14 @@
 
 .menu-link.current {
   color: $accent-color;
+
+  //   --active-element-scale-x: 1;
+  // --active-element-scale-y: 1;
+  // --active-element-show: 0;
+  // --active-element-opacity: 0;
+  // --active-element-widht: 0px;
+  // --active-element-strike-y: 0%;
+  // --active-element-mask-position: 0%;
 }
 
 .menu-link:hover,
